@@ -35,9 +35,3 @@ cd express-boilerplate</code></pre>
         </ul>
     </li>
 </ul>
-
-<h2>Contribution</h2>
-<p>Pull requests are welcome! For major changes, please open an issue first to discuss what you would like to change.</p>
-
-<h2>License</h2>
-<p><a href="https://choosealicense.com/licenses/mit/">MIT</a></p>
