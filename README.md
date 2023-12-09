@@ -4,8 +4,8 @@
 <h2>Getting Started</h2>
 <ol>
     <li><strong>Clone the Repository</strong>
-        <pre><code>git clone https://github.com/Landienzla/express-boilerplate.git
-cd express-boilerplate</code></pre>
+        <pre><code>git clone https://github.com/Landienzla/Cerebrum-Tech-Flight-API.git
+cd Cerebrum-Tech-Flight-API</code></pre>
     </li>
      <li><strong>Create and Fill the .env File</strong>
         <p>Before starting, create a <code>.env</code> file at the root of the project. You need to set <code>GMAIL_ADDRESS</code> and <code>GMAIL_PASSWORD</code> environment variables for sending email verification mails. If these are not provided, make sure to read the documentation carefully for alternative configurations.</p>
