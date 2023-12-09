@@ -34,6 +34,11 @@ export default async (req: Request, res: Response) => {
     userId: user.userId,
     expireIn: 1000 * 60 * 60 * 24 * 1, // 1 days
   });
+
+  await database.query(
+    `UPDATE users SET "lastLogin" = NOW() WHERE email = '${email}'`
+  );
+
   return sendResponse(req, res, 200, {
     message: "success",
     token: jwt_token,
