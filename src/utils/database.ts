@@ -19,12 +19,12 @@ export default pool;
 //       "lastName": "String",
 //       "emailVerified": "Boolean",
 //       "verificationToken": "String",
+//       "verificationExpires": "DateTime",
 //       "passwordResetToken": "String",
 //       "passwordResetExpires": "DateTime",
 //       "createdAt": "DateTime",
 //       "updatedAt": "DateTime",
 //       "lastLogin": "DateTime",
-//       "role": "String (Optional)",
 //       "status": "String (Optional)"
 //     }
 //   }

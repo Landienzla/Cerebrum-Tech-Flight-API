@@ -1,6 +1,6 @@
 import { Request, Response, NextFunction } from "express";
-import sendResponse from "@utils/sendResponse";
-import { logError } from "@utils/logger";
+import sendResponse from "./sendResponse";
+import { logError } from "./logger";
 
 const catchFunction = (
   fn: (req: Request, res: Response, next: NextFunction) => Promise<any>
@@ -10,7 +10,7 @@ const catchFunction = (
       logError(
         `Req url : ${req.originalUrl} method : ${req.method} -> On catch function : ${err.message}`
       );
-      sendResponse(req, res, 400, err, err.message);
+      sendResponse(req, res, 500, err, err.message);
     });
   };
 };

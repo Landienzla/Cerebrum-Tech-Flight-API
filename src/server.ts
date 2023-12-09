@@ -1,5 +1,6 @@
-import app from "./app";
 require("dotenv").config();
+import createTables from "./utils/createTables";
+import app from "./app";
 import database from "./utils/database";
 // @ts-ignore
 import { logInfo, logError } from "./utils/logger";
@@ -13,5 +14,10 @@ app.listen(port, async () => {
   } catch (error) {
     logError("Failed to connect to the database"); // If error, log this message
     console.error(error); // Also log the error stack
+  }
+  try {
+    await createTables(); // Create tables if not exists
+  } catch (error) {
+    logError(error); // Also log the error stack
   }
 });
