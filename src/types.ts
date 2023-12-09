@@ -6,5 +6,11 @@ interface RequestWithUser extends Request {
     userId: string;
   };
 }
+type ParsedLinks = {
+  first?: number;
+  last?: number;
+  next?: number;
+  prev?: number;
+};
 
-export { RequestWithUser };
+export { RequestWithUser, ParsedLinks };

@@ -1,18 +1,15 @@
 import sendResponse from "../utils/sendResponse";
 import { Router } from "express";
 import Auth from "../middlewares/auth";
+import catchFunction from "../utils/catchFunction";
+import {
+  flightDetailsController,
+  listFlightsController,
+} from "../controllers/flights";
 const router = Router();
 
-router.get("/list", Auth, (req, res) => {
-  return sendResponse(req, res, 200, {
-    message: "flights_list",
-  });
-});
+router.get("/list", Auth, catchFunction(listFlightsController));
 
-router.get("/:id", (req, res) => {
-  return sendResponse(req, res, 200, {
-    message: "flight_details",
-  });
-});
+router.get("/:id", Auth, catchFunction(flightDetailsController));
 
 export default router;
