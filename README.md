@@ -18,7 +18,17 @@ cd Cerebrum-Tech-Flight-API</code></pre>
     </li>
     <li><strong>Start the Development Server</strong>
         <pre><code>npm run develop</code></pre>
-    </li>
+    <li><strong>Build and Run the Application</strong>
+    <ol>
+        <li>Build the application by running:
+            <pre><code>npm run build</code></pre>
+        </li>
+        <li>Start the application in production mode using:
+            <pre><code>npm run start:prod</code></pre>
+        </li>
+    </ol>
+</li>
+
 </ol>
 
 <p>Your application should now be running at <a href="http://localhost:3001">http://localhost:3001</a>.</p>
