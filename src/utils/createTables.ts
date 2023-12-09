@@ -20,11 +20,26 @@ async function createTables() {
             "status" VARCHAR(50)
         );
     `;
+  const reservations = `
+        CREATE TABLE IF NOT EXISTS reservations (
+          "reservationId" SERIAL PRIMARY KEY,
+          "userId" INTEGER REFERENCES users("userId"),
+          "flightId" VARCHAR(255),
+          "seatNumber" VARCHAR(255),
+          "status" VARCHAR(255),
+          "createdAt" TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+          "updatedAt" TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+        );
+  `;
   let tables = [
     {
       name: "users",
       query: users,
       // check_exists: "SELECT * FROM users LIMIT 1",
+    },
+    {
+      name: "reservations",
+      query: reservations,
     },
   ]; // can add more tables here
   for await (let table of tables) {

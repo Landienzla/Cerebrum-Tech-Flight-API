@@ -7,6 +7,7 @@ const catchFunction = (
 ) => {
   return (req: Request, res: Response, next: NextFunction) => {
     fn(req, res, next).catch((err: Error) => {
+      console.log(err);//TODO remove
       logError(
         `Req url : ${req.originalUrl} method : ${req.method} -> On catch function : ${err.message}`
       );

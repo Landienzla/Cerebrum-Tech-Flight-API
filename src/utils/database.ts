@@ -33,7 +33,7 @@ export default pool;
 //     "reservations": {
 //       "reservationId": "Integer (Primary Key, Auto-Increment)",
 //       "userId": "Integer (Foreign Key to users.userId)",
-//       "flightId": "Integer",
+//       "flightId": "String",
 //       "seatNumber": "String",
 //       "reservationDate": "DateTime",
 //       "travelDate": "DateTime",
