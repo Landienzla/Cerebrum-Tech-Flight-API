@@ -45,3 +45,39 @@ cd Cerebrum-Tech-Flight-API</code></pre>
         </ul>
     </li>
 </ul>
+
+
+## Application Capabilities
+
+
+
+This application offers a comprehensive suite of features for handling flight-related operations, user authentication, and reservation management. Below is an overview of the core functionalities:
+
+
+
+### User Authentication and Management
+
+- **User Registration and Login**: Secure registration and login processes for users.
+
+- **Email Verification**: After registering, users receive an email verification link to ensure the authenticity of their email address.
+
+
+
+### Flight Information
+
+- **Flight Listing**: Users can view a list of available flights. The listing functionality includes various filters for ease of searching.
+
+- **Flight Details**: Detailed information about specific flights can be accessed, providing users with comprehensive data about flight schedules, durations, and more.
+
+
+
+### Reservation System
+
+- **Making Flight Reservations**: Users can make reservations on available flights, choosing their preferred seats.
+
+- **Cancelling Reservations**: Users have the flexibility to cancel their reservations if their plans change.
+
+- **Listing User Reservations**: Users can view all their reservations, both past and upcoming, in one place.
+
+- **Reservation Details**: Detailed view of a specific reservation, including flight details, seat number, and reservation status.
+
