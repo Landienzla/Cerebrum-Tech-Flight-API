@@ -1,5 +1,5 @@
 
-<a href="https://gold-comet-617949.postman.co/workspace/New-Team-Workspace~9b917001-f3d0-4d87-ba49-ab46725cb4dd/api/d414dfc7-ff51-4966-8653-dd368b65e48b?action=share&creator=17655551" target="_blank">Postman API Doc</a>
+<a href="https://www.postman.com/gold-comet-617949/workspace/new-team-workspace/api/d414dfc7-ff51-4966-8653-dd368b65e48b?action=share&creator=17655551" target="_blank">Postman API Doc</a>
 
 <h2>Getting Started</h2>
 <ol>
